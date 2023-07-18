@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Email Address
+        </b>
+        </label>
+        <input type="email" name="Uname" id="Uname" placeholder="Enter Email">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <label><b>Confirm Password
+        </b>
+        </label>
+        <input type="password" name="Pass" id="Pass" placeholder="Confirm Password">
+        <br><br>
+        <input type="button" name="register" id="register" value="Register">
+        <br><br>
+    </form>
+</div>
+<<div id="lol">
+        <p>Already have an account ?<a href="{{url_for('home')}}">Log In</a></p>
+    </div>
+</body>
+</html>
